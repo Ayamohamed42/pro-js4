@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYA’SPharmacy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="bg-gray-50 font-sans">
+   <header class="flex flex-col sm:flex-row items-center justify-between p-4 sm:px-10 border-b bg-white" data-aos="fade-down" data-aos-duration="800">
+    <div class="flex items-center justify-between w-full sm:w-auto">
+        <div class="text-2xl font-bold text-blue-800 flex items-center"> <img src="img/logo.png.jpg" alt="logi" class="h-20 mr-2"> AYA’S<span class="text-cyan-500">Pharmacy</span>
+        </div>
+        <div class="block sm:hidden">
+            <button><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </div>
+
+<div class="hidden sm:flex items-center gap-10">
+  <div class="relative">
+    <input type="search" placeholder="Search" class="Inp-search pl-10 pr-4 py-2 border rounded-full w-72 focus:outline-none focus:ring-2 focus:ring-cyan-500"/>
+    <i class="fas fa-search absolute top-2.5 left-3 text-gray-400"></i>
+  </div>
+</div>
+
+
+
+        <ul class="flex items-center space-x-8">
+  <!-- Logout -->
+<li class="flex items-center cursor-pointer">
+  <span class="text-black">
+    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+  </span>
+  <a id="logOut" href="#" class="text-sm text-blue-800 ml-2">
+    <span style="font-size: 20px; color: rgb(0, 191, 255);">L</span>ogout
+  </a>
+</li>
+
+
+  <!-- Cart -->
+  <li class="carts flex items-center cursor-pointer">
+<div class="relative">
+    <i class=" cart fa-solid fa-cart-shopping mr-2"></i>
+    <span class="absolute top-[-7px] right-[-5px] w-5 h-5 text-xs text-white bg-blue-500 rounded-full flex items-center justify-center badge"></span>
+</div>
+
+    <p class="cart relative" style="margin: 0 10px 0 0; font-size: 16px; "><span style="font-size: 20px; color: rgb(0, 191, 255);">C</span>art</p>
+    <div class="viewproduct">
+    <div></div> 
+    <a href="cartproducts.html">view product</a>
+    </div>
+  </li>
+</ul>
+
+</header>
+     
+    <div class="parent-sec-1" data-aos="fade-up" data-aos-duration="1500">
+    <section class="text-center py-10 px-4 bg-opacity-0" >
+      <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">
+        The <span class="text-cyan-600">one-stop</span> digital market place<br />
+        for all your <span class="text-blue-800">pharmacy's</span> needs
+      </h1>
+    </section>
+
+<section class="products grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 px-6 py-10 text-center">
+
+  <a href="Drugs.html" class="product-item">
+    <div class="bg-white p-4 rounded shadow hover:shadow-md h-47 rounded-2xl" data-aos="zoom-in" data-aos-delay="50">
+      <img src="img/1-drugs (1).png" alt="Logo" class="w-20 h-20 mx-auto">
+      <p class="font-medium">Drugs</p>
+    </div>
+  </a>
+
+  <a href="babyCare.html" class="product-item">
+    <div class="bg-white p-4 rounded shadow hover:shadow-md h-37 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+      <img src="img/2-baby-care.png" alt="Logo" class="w-20 h-20 mx-auto">
+      <p class="font-medium">Baby Care</p>
+    </div>
+  </a>
+
+  <a href="manCare.html" class="product-item">
+    <div class="bg-white p-4 rounded shadow hover:shadow-md h-37 rounded-2xl" data-aos="zoom-in" data-aos-delay="150">
+      <img src="img/3-man-care.png" alt="Logo" class="w-20 h-20 mx-auto">
+      <p class="font-medium">Men Care</p>
+    </div>
+  </a>
+
+  <a href="womenCare.html" class="product-item">
+    <div class="bg-white p-4 rounded shadow hover:shadow-md h-37 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+      <img src="img/4-woman-care.png" alt="Logo" class="w-20 h-20 mx-auto">
+      <p class="font-medium">Women Care</p>
+    </div>
+  </a>
+
+  <a href="Gomla.html" class="product-item">
+    <div class="bg-white p-4 rounded shadow hover:shadow-md h-37 rounded-2xl" data-aos="zoom-in" data-aos-delay="250">
+      <img src="img/Gomla update .png" alt="Logo" class="w-20 h-20 mx-auto">
+      <p class="font-medium">Gomla</p>
+    </div>
+  </a>
+
+  <a href="homeCare.html" class="product-item">
+    <div class="bg-white p-4 rounded shadow hover:shadow-md h-37 rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+      <img src="img/Home Care (1).png" alt="Logo" class="w-20 h-20 mx-auto">
+      <p class="font-medium">Home care</p>
+    </div>
+  </a>
+
+
+
+<div class="notFound hidden text-red-500 font-bold text-center mt-4">
+  No product found!
+</div>
+
+</section>
+
+
+    <div class="notFound text-red-500 font-bold text-center mt-4 hidden">No Products Found!</div>
+
+    <section class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-10 pb-16">
+      <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-right" data-aos-delay="50">
+        <i class="fas fa-receipt text-2xl text-cyan-500 mb-4 text-4xl"></i>
+        <h3 class="text-lg font-bold mb-2">Ease of Use</h3>
+        <p class="text-sm text-gray-600 mb-2">
+          Our easy and accessible ordering process allows you to make orders anytime, anywhere.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="150">
+        <i class="fas fa-percent text-2xl text-cyan-500 mb-4 text-4xl"></i>
+        <h3 class="text-lg font-bold mb-2">Exclusive Unmatched Offers</h3>
+        <p class="text-sm text-gray-600">
+          As a Pharmacy Marts member you get exclusive offers from suppliers.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-left" data-aos-delay="250">
+        <i class="fas fa-clipboard-list text-2xl text-cyan-500 mb-4 text-4xl"></i>
+        <h3 class="text-lg font-bold mb-2">Luxury of Choice</h3>
+        <p class="text-sm text-gray-600 mb-2">
+          Our search engine allows you to compare between various suppliers to secure your daily needs at the best prices.
+        </p>
+      </div>
+    </section>
+    </div>
+
+    <section class="bg-white py-16 px-4" data-aos="fade-up" data-aos-duration="1000">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+          The Preferred Platform for Your Pharmacy's Orders in Egypt.
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center" data-aos="flip-up" data-aos-delay="50">
+            <div class="w-24 h-24 bg-white bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 3h18v18H3V3z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Bundled Orders</h3>
+            <p class="text-sm text-gray-100">
+              No matter how many suppliers you order from using our mobile app or website, enjoy one package per order. Get same day delivery on orders placed by 4PM or have your items delivered within 24 hours.
+            </p>
+          </div>
+
+          <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center" data-aos="flip-up" data-aos-delay="150">
+            <div class="w-24 h-24 bg-white bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M4 7h16M4 11h16M4 15h16" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Financial Solutions</h3>
+            <p class="text-sm text-gray-100">
+              To help you grow your business we offer tailored payment plans.
+            </p>
+          </div>
+
+          <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center" data-aos="flip-up" data-aos-delay="250">
+            <div class="w-24 h-24 bg-white bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Hassle Free Ordering Process</h3>
+            <p class="text-sm text-gray-100">
+              Skip the long and numerous calls to suppliers and order your pharmacy’s needs on our mobile app or website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-gray-50 py-16 px-4" data-aos="fade-up" data-aos-duration="1000">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+        
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center lg:text-left">
+            LIST, COMPARE AND ORDER
+          </h2>
+
+          <div class="flex items-start gap-4 mb-8" data-aos="fade-right" data-aos-delay="50">
+            <div class="flex-shrink-0">
+              <div class="w-14 h-14 bg-white rounded-full shadow-md flex items-center justify-center">
+                <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M4 6h16M4 10h16M4 14h10M4 18h6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Prepare Your Medications List</h3>
+              <p class="text-gray-600 text-sm">
+                Start your day right with the quick and easy experience of adding your list of needed products to our platform; this will help you find and match the best offers.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 mb-8" data-aos="fade-right" data-aos-delay="150">
+            <div class="flex-shrink-0">
+              <div class="w-14 h-14 bg-white rounded-full shadow-md flex items-center justify-center">
+                <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Find and Compare Different Offers</h3>
+              <p class="text-gray-600 text-sm">
+                Once your list is full, use our <span class="text-teal-500 font-medium">smart search engine</span> to check the best offers from many suppliers.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4" data-aos="fade-right" data-aos-delay="250">
+            <div class="flex-shrink-0">
+              <div class="w-14 h-14 bg-white rounded-full shadow-md flex items-center justify-center">
+                <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M3 13h2l1 2h13M5 6h14l1 7H6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Get Your Order Delivered Within 24 Hours</h3>
+              <p class="text-gray-600 text-sm">
+                We strive to fulfill your order as fast as possible, with the guarantee of free delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 flex justify-center" data-aos="fade-left" data-aos-delay="300">
+          <img src="img/CallToAction.png" alt="Mobile App" class="max-w-full h-auto">
+          </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <footer class="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-12 px-4" data-aos="fade-up" data-aos-duration="800">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+
+        <div class="flex items-center space-x-4">
+          <img src="./img/logo.png.jpg" alt="Logo" class="w-16 h-16" />
+          <div>
+            <p class="text-sm text-gray-300 max-w-md">
+              Pharmacy Marts is a digital marketplace that connects pharmacies and medical suppliers to easily, conveniently and quickly access and receive medicine, medical supplies and cosmetics at the best prices.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
+          <div class="text-center lg:text-left">
+            <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-gray-200">
+              <li><a href="#" class="hover:text-gray-100">Home</a></li>
+              <li><a href="#" class="hover:text-gray-100">Terms and Conditions</a></li>
+              <li><a href="#" class="hover:text-gray-100">Contact Us</a></li>
+              <li><a href="#" class="hover:text-gray-100">Find a Product</a></li>
+            </ul>
+          </div>
+
+          <div class="text-center lg:text-left">
+            <h3 class="font-semibold text-lg mb-4">Contact Us</h3>
+            <p class="text-sm text-gray-200 mb-2">
+              <span class="font-medium">Phone:</span> 0109088148
+            </p>
+            <p class="text-sm text-gray-200">
+              <span class="font-medium">Email:</span> ayapharmacy@gmail.com
+            </p>
+          </div>
+
+          <div class="text-center lg:text-left">
+            <h3 class="font-semibold text-lg mb-4">Connect With Us</h3>
+            <div class="flex justify-center lg:justify-start gap-4 mb-6">
+              <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="text-gray-200 hover:text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-gray-200 hover:text-white"><i class="fas fa-user-circle"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-sm text-gray-300">ayapharmacy@gmail.com | All rights reserved.©2025</p>
+        <p class="text-sm text-gray-300">A Digital Marts Company</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
+    <script src="js/search.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/out.js"></script>
+  
+
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.png">
+    <title>AYA’SPharmacy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-50 font-sans">
+   <header class="flex flex-col sm:flex-row items-center justify-between p-4 sm:px-10 border-b bg-white" data-aos="fade-down" data-aos-duration="800">
+    <div class="flex items-center justify-between w-full sm:w-auto">
+        <div class="text-2xl font-bold text-blue-800 flex items-center"> <img src="img/logo.png.jpg" alt="logi" class="h-20 mr-2"> AYA’S<span class="text-cyan-500">Pharmacy</span>
+        </div>
+        <div class="block sm:hidden">
+            <button><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </div>
+
+    <div class="hidden sm:flex items-center gap-10">
+
+        <div class="login  hover:text-blue-500">
+            <i class="fa-solid fa-user" style="display: block; margin-left: 50%; font-size: 20px;"></i> 
+        <a href="#" class="text-sm text-blue-800" style="margin-left: 15px;"><span style="font-size: 20px; color: rgb(0, 191, 255);">L</span>ogin </a>
+        </div>
+        <a href="#" class="text-xl text-gray-600 hover:text-cyan-500">
+            <i class="fas fa-shopping-cart"></i>
+            <p style="margin: 0 10px 0 0; font-size: 16px; "><span style="font-size: 20px; color: rgb(0, 191, 255);">C</span>art</p>
+        </a>
+    </div>
+</header>
+
+<div class="index min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-100 via-white to-blue-200">
+  <section class="section-form bg-white text-center p-8 rounded-2xl shadow-2xl w-80 sm:w-96" data-aos="zoom-in" data-aos-delay="850"> 
+    <h2 class="text-2xl font-bold text-blue-700 mb-6">REGISTER PAGE</h2>
+
+    <form class="inp space-y-4">
+ 
+      <input
+        class="inpCart block w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+        type="text"
+        placeholder="Enter Username"
+        id="Username">
+
+      <input
+        class="inpCart block w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+        type="email"
+        placeholder="Enter your email"
+        id="email">
+
+
+      <div class="box relative">
+        <input
+          class="inpCart w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          type="password"
+          placeholder="Enter your password"
+          id="password">
+        
+        <input type="checkbox" id="show" class="hidden">
+        
+
+        <label for="show" class="eye1 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer">
+          <i class="fa-regular fa-eye"></i>
+        </label>
+
+
+        <label for="show" class="eye2 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer hidden">
+          <i class="fa-regular fa-eye-slash"></i>
+        </label>
+      </div>
+
+
+      <input
+        class="block w-full px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-lg cursor-pointer hover:from-blue-700 hover:to-cyan-600 transition-all"
+        type="submit"
+        id="Sign_up"
+        value="Sign Up">
+    </form>
+  </section>
+</div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+      AOS.init();   // Initialize AOS
+    </script>    
+  </body>
+</html>
